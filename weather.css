@@ -1,0 +1,9 @@
+#weather_now {
+    width: 600px;
+    height: 300px;
+    border: 10px solid #000;
+}
+#weather_5days {
+    width: 60%;
+    height: 30%;
+}
