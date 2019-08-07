@@ -1,7 +1,7 @@
-#weather_now {
+table {
     width: 600px;
     height: 300px;
-    border: 10px solid #000;
+    border: 5px solid #aacc;
 }
 #weather_5days {
     width: 60%;
