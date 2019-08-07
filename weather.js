@@ -25,7 +25,7 @@ var table_now = function() {
     }
     weather_now_view[0].innerHTML = loc.value;
     let img = document.getElementById("weather_img");
-    img.src = `http://openweathermap.org/img/w/${locData5Days[count].weather[0].icon}.png`;
+    img.src = `https://openweathermap.org/img/w/${locData5Days[count].weather[0].icon}.png`;
     weather_now_view[2].innerHTML = locData5Days[count].dt_txt.slice(5, 13) + " 시 기준";
     weather_now_view[3].innerHTML = (locData5Days[count].main.temp - 273.15).toFixed(1) + " º";
     weather_now_view[4].innerHTML = (locData5Days[count].main.temp_min - 273.15).toFixed(1) + " º";
