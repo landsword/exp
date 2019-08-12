@@ -6,46 +6,27 @@
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css" />
 </head>
 <body>
-    Hello!! It`s test message :)
     <header>
         <select id="location" onchange="weather_check()">
             
         </select>
+        <input type="button" onclick="location.reload();" value="UPDATE" />
+        <div>
+            UPDATE: 
+            <span id="standard_time"></span>
+        </div>
     </header>
-    <div id="weather_now">
-        <table>
-            <tr>
-                <td class="weather_now_view" rowspan="3"></td>
-                <td class="weather_now_view" rowspan="3">
-                    <img id="weather_img" src="">
-                </td>
-                <td class="weather_now_view" rowspan="2"></td>
-                <td class="weather_now_view" rowspan="2"></td>
-                <td class="weather_now_view"></td>
-            </tr>
-            <tr>
-                <td class="weather_now_view"></td>
-            </tr>
-            <tr>
-                <td class="weather_now_view"></td>
-                <td class="weather_now_view"></td>
-                <td class="weather_now_view"></td>
-            </tr>
-        </table>
-    </div>
-    <div id="weather_5days">
-        <table>
-            <tr>
-                <td>1일(기준 오전 06:00)</td>
-                <td>2일 구름/풍속/습도/온도</td>
-                <td>3일</td>
-                <td>4일</td>
-                <td>5일</td>
-            </tr>
-        </table>
-    </div>
+    <section id="weather_now">
+        <div class="weather_now_view">지역이름</div>
+        <div class="weather_now_view">경도 위도</div>
+        <img id="weather_img" src="" alt="weather_image" />
+        <div class="weather_now_view">습도, 풍속</div>
+        <div class="weather_now_view">현재온도</div>
+        <div class="weather_now_view">최저온도, 최고온도</div>
+    </section>
     <script src="weather.js"></script>
 </body>
 </html>
