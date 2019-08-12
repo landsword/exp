@@ -8,7 +8,6 @@ locList.forEach(function(el) {
 });
 
 var weather_now = document.getElementById("weather_now");
-var table_5Days = document.getElementById("weather_5Days");
 var weather_now_view = document.getElementsByClassName("weather_now_view");
 
 Date.prototype.format = function() {
