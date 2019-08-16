@@ -8,7 +8,6 @@ locList.forEach(function(el) {
 });
 
 var weather_now = document.getElementById("weather_now");
-var table_5Days = document.getElementById("weather_5Days");
 var weather_now_view = document.getElementsByClassName("weather_now_view");
 
 Date.prototype.format = function() {
@@ -30,7 +29,7 @@ var data_now = function(data) {
     var img = document.getElementById("weather_img");
     img.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weather_now_view[1].innerHTML = data.coord.lat + " " + data.coord.lon;
-    weather_now_view[2].innerHTML = data.main.humidity + "% " + data.wind.speed + "m/s";
+    weather_now_view[2].innerHTML = data.weather[0].main + " " + data.main.humidity + "% " + data.wind.speed + "m/s";
     weather_now_view[3].innerHTML = (data.main.temp - 273.15).toFixed(1) + " °C";
     weather_now_view[4].innerHTML = "min " + (data.main.temp_min - 273.15).toFixed(1) + " °C " +
                                     " / max " + (data.main.temp_max - 273.15).toFixed(1) + " °C ";
@@ -44,6 +43,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${loc.value},kr&appid=f
 })
 .then(function(json) {
     data_now(json);
+    console.log(json);
 })
 
 
