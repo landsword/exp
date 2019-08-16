@@ -43,7 +43,6 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${loc.value},kr&appid=f
 })
 .then(function(json) {
     data_now(json);
-    console.log(json);
 })
 
 
