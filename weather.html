@@ -6,27 +6,74 @@
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="weather.css"/>
 </head>
 <body>
     <header>
-        <select id="location" onchange="weather_check()">
-            
+        <select id="location" onchange="weather_check();weather_check_3hours();">
         </select>
-        <input type="button" onclick="weather_check();" value="UPDATE" />
+        <input type="button" onclick="weather_check();weather_check_3hours();" value="UPDATE"/>
         <div>
             UPDATE: 
             <span id="standard_time"></span>
         </div>
     </header>
-    <section id="weather_now">
-        <div class="weather_now_view">지역이름</div>
-        <div class="weather_now_view">경도 위도</div>
-        <img id="weather_img" src="" alt="weather_image" />
-        <div class="weather_now_view">습도, 풍속</div>
-        <div class="weather_now_view">현재온도</div>
-        <div class="weather_now_view">최저온도, 최고온도</div>
+    <section>
+        <div id="weather_now">
+            <div class="weather_now_view">지역이름</div>
+            <div class="weather_now_view">경도 위도</div>
+            <img id="weather_img" src="" alt="weather_image"/>
+            <div class="weather_now_view">습도, 풍속</div>
+            <div class="weather_now_view">현재온도</div>
+            <div class="weather_now_view">최저온도, 최고온도</div>
+        </div>
     </section>
+    <footer>
+        <div id="weather_3hours">
+            <div class="weather_3hours_view">
+                <div class="3hours_view">시간</div>
+                <img id="weather_3hours_img_0" src="" alt="weather_image"/>
+                <div class="3hours_view">온도</div>
+                <div class="3hours_view">습도</div>
+            </div>
+            <div class="weather_3hours_view">
+                <div class="3hours_view">시간</div>
+                <img id="weather_3hours_img_1" src="" alt="weather_image"/>
+                <div class="3hours_view">온도</div>
+                <div class="3hours_view">습도</div>
+            </div>
+            <div class="weather_3hours_view">
+                <div class="3hours_view">시간</div>
+                <img id="weather_3hours_img_2" src="" alt="weather_image"/>
+                <div class="3hours_view">온도</div>
+                <div class="3hours_view">습도</div>
+            </div>
+            <div class="weather_3hours_view">
+                <div class="3hours_view">시간</div>
+                <img id="weather_3hours_img_3" src="" alt="weather_image"/>
+                <div class="3hours_view">온도</div>
+                <div class="3hours_view">습도</div>
+            </div>
+            <div class="weather_3hours_view">
+                <div class="3hours_view">시간</div>
+                <img id="weather_3hours_img_4" src="" alt="weather_image"/>
+                <div class="3hours_view">온도</div>
+                <div class="3hours_view">습도</div>
+            </div>
+            <div class="weather_3hours_view">
+                <div class="3hours_view">시간</div>
+                <img id="weather_3hours_img_5" src="" alt="weather_image"/>
+                <div class="3hours_view">온도</div>
+                <div class="3hours_view">습도</div>
+            </div>
+            <div class="weather_3hours_view">
+                <div class="3hours_view">시간</div>
+                <img id="weather_3hours_img_6" src="" alt="weather_image"/>
+                <div class="3hours_view">온도</div>
+                <div class="3hours_view">습도</div>
+            </div>
+        </div>
+    </footer>
     <script src="weather.js"></script>
 </body>
 </html>

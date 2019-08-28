@@ -12,14 +12,17 @@ body {
 header div {
     margin: 0.5rem;
 }
-.weather_now_view:nth-child(1) {
-    margin-top: 3rem;
-    font-size: 3rem;
-} 
-img {
-    padding-top: 3rem;
+section {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#weather_img {
+    padding-top: 1rem;
     width: 5rem;
     height: 5rem;
+}
+.weather_now_view:nth-child(1) {
+    font-size: 3rem;
 }
 .weather_now_view:nth-child(5) {
     padding-top: 3rem;
@@ -27,4 +30,13 @@ img {
 }
 .weather_now_view:nth-child(6) {
     padding-top: 1rem;
+}
+#weather_3hours {
+    text-align: center;
+}
+.weather_3hours_view {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+
 }
