@@ -1,4 +1,4 @@
-var locList = ["Seoul", "Daejeon", "daegu", "Busan", "Gwangju", "Jeju"];
+var locList = ["Busan", "Seoul", "Daejeon", "daegu", "Gwangju", "Jeju"];
 var loc = document.getElementById("location");
 locList.forEach(function(el) {
     let option = document.createElement("option");
