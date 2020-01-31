@@ -1,5 +1,6 @@
 const locList = ["Busan", "Seoul", "Daejeon", "daegu", "Gwangju", "Jeju"];
 const loc = document.getElementById("location");
+
 locList.forEach(function(el) {
     let option = document.createElement("option");
     option.value = el;
