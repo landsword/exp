@@ -1,7 +1,13 @@
 body {
     background-image: url("background.jpg");
-    color: white;
-    text-shadow: 0 0 3px white;
+    color: #ffffff;    
+}
+section {
+    border: 0.5rem solid #ffffff;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    max-width: 50rem;
 }
 #weather_now {
     text-align: center;
@@ -37,6 +43,6 @@ section {
 .weather_3hours_view {
     display: inline-block;
     font-size: 0.8rem;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 
 }
