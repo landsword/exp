@@ -28,10 +28,9 @@ const data_now = function(data) {
     weather_now_view[0].innerHTML = loc.value;
     let img = document.getElementById("weather_img");
     img.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weather_now_view[1].innerHTML = data.coord.lat + " " + data.coord.lon;
-    weather_now_view[2].innerHTML = data.weather[0].main + " " + data.main.humidity + "% " + data.wind.speed + "m/s";
-    weather_now_view[3].innerHTML = (data.main.temp - 273.15).toFixed(1) + " °C";
-    weather_now_view[4].innerHTML = "min " + (data.main.temp_min - 273.15).toFixed(1) + " °C " +
+    document.getElementById("weather_now_view").innerHTML = data.weather[0].main + " " + data.main.humidity + "% " + data.wind.speed + "m/s";
+    weather_now_view[1].innerHTML = (data.main.temp - 273.15).toFixed(1) + " °C";
+    weather_now_view[2].innerHTML = "min " + (data.main.temp_min - 273.15).toFixed(1) + " °C " +
                                     " / max " + (data.main.temp_max - 273.15).toFixed(1) + " °C ";
     let standard_time = document.getElementById("standard_time");
     standard_time.innerHTML = (new Date).format();
@@ -50,7 +49,7 @@ weather_check();
 
 const date_3hours_format = function(date) {
     let month = date.getMonth() < 9 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1);
-    let day = date.getDate();
+    let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
     let hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
     let format = `${month}-${day} ${hours}:00`;
 

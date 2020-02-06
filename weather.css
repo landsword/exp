@@ -3,46 +3,49 @@ body {
     color: #ffffff;    
 }
 section {
-    border: 0.5rem solid #ffffff;
-    border-radius: 1rem;
-    padding: 1rem 1rem;
-    margin: 0 auto;
-    max-width: 50rem;
+    margin: 1rem auto;
+    max-width: 45rem;
+    min-width: 23rem;
+}
+#location, header div {
+    margin: 0.5rem;
 }
 #weather_now {
     text-align: center;
-}
-#location {
-    margin: 0.5rem;
-}
-header div {
-    margin: 0.5rem;
-}
-section {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    padding: 4rem auto;
+    border: 0.1rem dashed #ffffff;
+    border-radius: 1rem;
 }
 #weather_img {
-    padding-top: 1rem;
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
+}
+#weather_now > div {
+    text-align: center;
+    display: inline-block;
+    margin: 3rem;
+}
+
+#weather_now_view {
+    font-size: 1.3rem;
 }
 .weather_now_view:nth-child(1) {
-    font-size: 3rem;
-}
-.weather_now_view:nth-child(5) {
-    padding-top: 3rem;
     font-size: 2rem;
 }
-.weather_now_view:nth-child(6) {
-    padding-top: 1rem;
+.weather_now_view:nth-child(2) {
+    margin:  2rem;
+    font-size: 4rem;
 }
 #weather_3hours {
     text-align: center;
+    margin-top:1rem;
+    padding: 1rem;
+    border: 0.1rem dashed #ffffff;
+    border-radius: 1rem;
 }
 .weather_3hours_view {
     display: inline-block;
     font-size: 0.8rem;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 
 }
