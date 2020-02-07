@@ -22,7 +22,7 @@ section {
 #weather_now > div {
     text-align: center;
     display: inline-block;
-    margin: 5rem;
+    margin: 3rem;
 }
 
 #weather_now_view {
@@ -30,20 +30,20 @@ section {
 }
 .weather_now_view:nth-child(1) {
     margin:  2rem;
-    font-size: 5rem;
+    font-size: 4.7rem;
 }
 .weather_now_view:nth-child(2) {
     font-size: 1.3rem;
 }
 #weather_3hours {
     text-align: center;
-    margin-top:1rem;
+    margin-top: 4rem;
     padding: 1rem;
 
 }
 .weather_3hours_view {
     display: inline-block;
-    font-size: 0.8rem;
-    margin: 0 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem 1rem;
 
 }
