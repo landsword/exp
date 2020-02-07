@@ -25,10 +25,9 @@ Date.prototype.format = function() {
 }
 
 const data_now = function(data) {
-    weather_now_view[0].innerHTML = loc.value;
     let img = document.getElementById("weather_img");
     img.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    document.getElementById("weather_now_view").innerHTML = data.weather[0].main + " " + data.main.humidity + "% " + data.wind.speed + "m/s";
+    weather_now_view[0].innerHTML = data.main.humidity + "% " + data.wind.speed + "m/s";
     weather_now_view[1].innerHTML = (data.main.temp - 273.15).toFixed(1) + " °C";
     weather_now_view[2].innerHTML = "min " + (data.main.temp_min - 273.15).toFixed(1) + " °C " +
                                     " / max " + (data.main.temp_max - 273.15).toFixed(1) + " °C ";

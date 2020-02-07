@@ -30,11 +30,11 @@ section {
     font-size: 1.3rem;
 }
 .weather_now_view:nth-child(1) {
-    font-size: 2rem;
+    margin:  2rem;
+    font-size: 5rem;
 }
 .weather_now_view:nth-child(2) {
-    margin:  2rem;
-    font-size: 4rem;
+    font-size: 1.3rem;
 }
 #weather_3hours {
     text-align: center;
