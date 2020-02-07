@@ -4,7 +4,7 @@ body {
 }
 section {
     margin: 1rem auto;
-    min-width: 30rem;
+    min-width: 28rem;
 }
 #location, header div {
     margin: 0.5rem;
@@ -16,8 +16,8 @@ section {
     
 }
 #weather_img {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
 }
 #weather_now > div {
     text-align: center;
@@ -38,8 +38,6 @@ section {
 #weather_3hours {
     text-align: center;
     margin-top: 4rem;
-    padding: 1rem;
-
 }
 .weather_3hours_view {
     display: inline-block;
