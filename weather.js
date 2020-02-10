@@ -27,12 +27,24 @@ Date.prototype.format = function() {
 const data_now = function(data) {
     let img = document.getElementById("weather_img");
     img.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weather_now_view[0].innerHTML = data.main.humidity + "% " + data.wind.speed + "m/s";
+    weather_now_view[0].innerHTML = data.main.humidity + " %  " + data.wind.speed + " m/s";
     weather_now_view[1].innerHTML = (data.main.temp - 273.15).toFixed(1) + " °C";
     weather_now_view[2].innerHTML = "min " + (data.main.temp_min - 273.15).toFixed(1) + " °C " +
                                     " / max " + (data.main.temp_max - 273.15).toFixed(1) + " °C ";
     let standard_time = document.getElementById("standard_time");
     standard_time.innerHTML = (new Date).format();
+    
+    if (standard_time.innerHTML.slice(-5,-3) < 6) {
+        document.body.style.backgroundColor = "#3A375D";
+    } else if (standard_time.innerHTML.slice(-5,-3) < 15) {
+        document.body.style.backgroundColor = "#A5C3DE";
+    } else if (standard_time.innerHTML.slice(-5,-3) < 18) {
+        document.body.style.backgroundColor = "#E5BC7C";
+    } else if (standard_time.innerHTML.slice(-5,-3) < 21){
+        document.body.style.backgroundColor = "#767CBD";
+    } else {
+        document.body.style.backgroundColor = "#3A375D";
+    }
 }
 
 const weather_check = function() {    // If select.value is change, call weather data.

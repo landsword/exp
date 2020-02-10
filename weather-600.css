@@ -1,11 +1,8 @@
 body {
-    background-image: url("background.jpg");
     color: #ffffff;    
 }
 section {
     margin: 0 auto;
-    border: 0.2rem solid #ffffff;
-    border-radius: 0.5rem;
 }
 #location, header div {
     margin: 0.5rem;
@@ -22,8 +19,7 @@ section {
 }
 #weather_now > div {
     text-align: center;
-    display: inline-block;
-    margin: 3rem;
+
 }
 
 #weather_now_view {

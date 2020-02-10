@@ -1,5 +1,5 @@
 body {
-    background-image: url("background.jpg");
+    background-color: aliceblue;
     color: #ffffff;    
 }
 section {
@@ -28,7 +28,7 @@ section {
     font-size: 1.3rem;
 }
 .weather_now_view:nth-child(1) {
-    margin:  2rem;
+    margin:  2rem 2rem 4rem 2rem;
     font-size: 4.7rem;
 }
 .weather_now_view:nth-child(2) {
